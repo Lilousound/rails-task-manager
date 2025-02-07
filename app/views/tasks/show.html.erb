@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="d-flex justify-content-between show-container">
+    <h2 class=""><%= @task.title %>
+    <h4><%= link_to edit_path do%>
+          <i class="fa-regular fa-pen-to-square"></i>
+        <% end %>
+    </h4>
+  </div>
+
+  </h2>
+
+
+  <p><%= @task.details %></p>
+  <h2><%= link_to "🔙", tasks_path %></h2>
+
+
+
+
+
+</div>

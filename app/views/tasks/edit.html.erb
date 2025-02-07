@@ -1,0 +1,21 @@
+<div class="container">
+
+  <h2 class="m-5 text-center" >Edit <%= @task.title %></h2>
+
+  <%= form_with model: @task do |f| %>
+  <div class="m-5">
+    <div class=" mt-5">
+      <div class="mb-4 pe-3 fw-bold d-flex justify-content-between">
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+      </div>
+      <div class="mb-4 pe-3 fw-bold d-flex justify-content-between">
+        <%= f.label :details %>
+        <%= f.text_field :details %>
+      </div>
+        <%= f.submit "Update task", class: "btn btn-outline-success" %>
+        <% end %>
+    </div>
+
+  </div>
+</div>

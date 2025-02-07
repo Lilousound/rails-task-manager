@@ -1,0 +1,24 @@
+<div class="container">
+
+  <%= form_with model: @task do |f| %>
+  <div class="m-5 text-center">
+    <h1>Add a new task</h1>
+    <div class=" mt-5">
+      <div class="mb-4 pe-3 fw-bold d-flex justify-content-between">
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+      </div>
+      <div class="mb-4 pe-3 fw-bold d-flex justify-content-between">
+        <%= f.label :details %>
+        <%= f.text_field :details %>
+      </div>
+        <%= f.submit "New task", class: "btn btn-outline-info text-center" %>
+    </div>
+
+
+  </div>
+  <p><%= @task.details %></p>
+    <h2><%= link_to "🔙", tasks_path %></h2>
+  <% end %>
+
+</div>
